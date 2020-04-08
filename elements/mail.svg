@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mail">
+            <rect id="Rectangle-7" fill="#FFFFFF" x="0" y="0" width="32" height="32"></rect>
+            <g id="ic_mail_outline_48px" transform="translate(6.000000, 8.000000)" fill="#000000" fill-rule="nonzero">
+                <path d="M18,0 L2,0 C0.895,0 0.01,0.895 0.01,2 L0,14 C0,15.105 0.895,16 2,16 L18,16 C19.105,16 20,15.105 20,14 L20,2 C20,0.895 19.105,0 18,0 Z M18,14 L2,14 L2,4.33613731 L10,9.33613731 L18,4.33613731 L18,14 Z M10,7 L2,2 L18,2 L10,7 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
