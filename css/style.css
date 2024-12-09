@@ -1,0 +1,1265 @@
+
+
+
+
+/*--------------------------------------\
+                $MOBILE
+\--------------------------------------*/
+body {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 160%;
+  background-color: var(--mainbackground);
+  
+}
+
+
+/* —————————— 2024 NEW STYLES ————————————— */
+h1, h2, h3, h4, h5 {
+  line-height: 140%;
+
+}
+
+.headline-h1 {
+  font-size: 2.15rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+h1, .h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+h2, .h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+h3, .h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+h4, .h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+h5, .h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.l-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--text-secondarytitle);
+}
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-secondarytitle);
+}
+p, .paragraph {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--text-paragraphs);
+}
+p strong {
+  font-weight: 500;
+  color: var(--primary);
+}
+.links {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.badge {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+
+/* ————————————— TABLET TEXT STYLES ————————————————*/
+
+@media (min-width: 768px ){
+
+.headline-h1 {
+  font-size: 3.25rem;
+}
+h1, .h1 {
+  font-size: 2.875rem;
+}
+h2, .h2 {
+  font-size: 2.5rem;
+}
+h3, .h3 {
+  font-size: 2rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+.subtitle {
+  font-size: 0.875rem;
+}
+
+p, .paragraph {
+  font-size: 1rem;
+}
+
+.badge {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+}
+
+/* ————————————— END TABLET ————————————————*/
+
+
+/* ————————————— DESKTOP TEXT STYLES ————————————————*/
+
+@media (min-width: 1024px){
+
+.headline-h1 {
+  font-size: 4.5rem;
+}
+h1, .h1 {
+  font-size: 4rem;
+}
+
+}
+
+
+/* ————————————— END DESKTOP————————————————*/
+
+
+
+
+.flex {
+  display: flex;
+align-items: center;
+align-self: stretch;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+
+align-items: center;
+align-self: stretch;
+}
+.left {
+  align-items: flex-start;
+  text-align: left;
+}
+.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.background-blur {
+  backdrop-filter : blur(28px);
+}
+.bg-border {
+  border-radius: var(--mainborderradius);
+  border: var(--stroke) solid var(--badge-badgeneutral--border);
+  background: var(--secondarybackground);
+}
+.padding-base {
+  padding: 24px;
+}
+
+
+
+/* ————— Page components ———————— */ 
+
+.col {
+  display: inline-flex;
+  flex-direction: column;
+}
+.row-components {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  border-left: 1px solid var(--badge-badgeneutral--border);
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+
+
+
+/* ———————————————————————————————————————
+--------------END NEW STYLE---------------
+—————————————————————————————————————————*/ 
+
+
+@keyframes titleinside {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+.page-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  max-width: 1120px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 180px;
+  margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, h5 {
+  color: var(--text-titles);
+}
+
+p span {
+  color: var(--primary);
+}
+
+.cards {
+   background-color: var(--white);
+  border-radius: 24px;
+  box-shadow: rgba(31, 51, 73, 0.12) 0 12px 38px;
+  -webkit-box-shadow: rgba(31, 51, 73, 0.12) 0 12px 38px;
+  -webkit-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease .2s;
+}
+.cards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(31, 51, 73, 0.24);
+}
+.no-shadow {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+
+
+
+
+/*___________________________
+
+            HERO
+_____________________________*/
+
+
+
+.hero {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+
+animation-delay: .4s!important;
+  -webkit-animation-delay: .4s!important;
+  -webkit-animation: ease .8s titleinside;
+  -o-animation: ease .8s titleinside;
+  animation: ease .8s titleinside;
+  animation-fill-mode: both;
+}
+
+/* ————————— IMAGES BACKGROUND TEST —————————————— */
+
+.deco {
+  display: none;
+} /*
+  position:absolute;
+  z-index: -5;
+
+  width: 140px;
+  height: 140px;
+}
+
+@keyframes bg-animation {
+
+  to {
+    transform: translateY(200px);
+
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .deco {
+      animation: bg-animation linear both;
+      animation-timeline: scroll();
+    } 
+  }
+}
+
+
+section {
+  position: relative;
+}
+
+.deco-1 {
+  top:80px;
+  right:0px;
+
+  background-image: url(../elements/img/deco/deco-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 40px;
+}
+
+.deco-2 {
+  top:430px;
+  left:0px;
+
+  background-image: url(../elements/img/deco/deco-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -45px;
+}
+.deco-3 {
+  bottom:60px;
+  right:-16px;
+
+  background-image: url(../elements/img/deco/deco-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10px;
+
+}
+.deco-4 {
+  z-index: 5;
+  bottom: 100px;
+  left: -60px;
+  transform: rotate(-45deg);
+
+  background-image: url(../elements/img/deco/deco-4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.deco-5 {
+  top: -230px;
+  right: -8px;
+  width: 110px;
+  height: 110px;
+  background-image: url(../elements/img/deco/deco-5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10px;
+
+}
+.deco-6 {
+  bottom: 70px;
+  left: -60px;
+  width: 160px;
+  height: 160px;
+
+  background-image: url(../elements/img/deco/deco-6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-45deg);
+}
+.deco-7 {
+  z-index: 5;
+  bottom: 120px;
+  right: -16px;
+
+  background-image: url(../elements/img/deco/deco-7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 26px;
+  transform: rotate(-45deg);
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+.intro-title {
+  text-align: center;
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+align-self: stretch; 
+}
+.intro-title span {
+  color: var(--text-secondarytitle);
+}
+.rs-links {
+  display: flex;
+align-items: center;
+gap: 16px;
+flex-wrap: wrap;
+justify-content: center;
+}
+.rs-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+
+
+/*___________________________
+
+            PROJETS
+_____________________________*/
+
+
+.projects {
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 48px;
+align-self: stretch;
+width: 100%;
+
+    animation-delay: .6s!important;
+  -webkit-animation-delay: .6s!important;
+  -webkit-animation: ease .8s titleinside;
+  -o-animation: ease .8s titleinside;
+  animation: ease .8s titleinside;
+  animation-fill-mode: both;
+}
+.projects-list {
+  width: 100%;
+}
+.projects-list ul {
+  display: flex;
+align-items: flex-start;
+align-content: flex-start;
+gap: 32px;
+align-self: stretch;
+flex-wrap: wrap;
+}
+
+/* ———————————————————————————— BG PROJETS —————————————————— */
+
+.edf a:hover {
+  background-color: #C3E2FF;
+} 
+.edf-bg {
+  background-image: url(../elements/projets/edf/edf-main-2.png);
+}
+.kurso a:hover {
+  background-color: #DDD1FF;
+}
+.kurso-bg {
+  background-image: url(../elements/projets/kurso/kurso-main.png);
+}
+.serenisia a:hover {
+  background-color: #D4E3FF;
+}
+.serenisia-bg {
+  background-image: url(../elements/projets/serenisia/serenisia-main.png);
+}
+.butterfly a:hover {
+  background-color: #BFDDE3;
+}
+
+/*___________________________
+
+            $ About 
+_____________________________*/
+
+
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+  flex-direction: column-reverse;
+}
+
+.about-left {
+  position: relative;
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.about-img {
+overflow: hidden;
+border-radius: var(--mainborderradius);
+border: 0.5px solid var(--badge-badgeneutral--border);
+background: var(--secondarybackground);
+height: 480px;
+flex: 1 0 0;
+
+background-image: url(../elements/img/img-ql.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.about-left .badge {
+  position: absolute;
+right: -24px;
+bottom: -18px;
+transform: rotate(-15deg);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  text-align: left;
+}
+.about-text .intro-title {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.kpi-container {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+gap: 24px;
+}
+.kpi-row {
+  display: flex;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+width: 100%;
+flex-wrap: wrap;
+}
+.kpi-card {
+  text-align: left;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+flex: 1 0 0;
+}
+
+/*___________________________
+
+            Tablette
+_____________________________*/
+
+
+@media (min-width: 768px) {
+
+.about-container {
+  flex-direction: inherit;
+  gap: 80px;
+}
+.about-left {
+  width: 40%;
+}
+.about-text {
+  gap: 40px;
+}
+.about-img {
+  height: 626px;
+}
+
+}
+
+
+
+
+
+/*___________________________
+
+            Experience 
+_____________________________*/
+
+#career {
+  width: 100%;
+}
+.career-container {
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+align-self: stretch;
+}
+.job-list {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+}
+.job-row {
+  display: flex;
+padding: 24px 0px;
+justify-content: center;
+align-items: flex-start;
+align-self: stretch;
+
+border-bottom: var(--stroke) solid var(--badge-badgeneutral--border);
+}
+.job-list li:last-child {
+  border: none;
+}
+.job-left, .job-right {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+flex: 1 0 0;
+}
+.job-left {
+  text-align: left;
+}
+.job-right {
+  align-items: flex-end;
+  text-align: right;
+}
+.societe {
+  display: flex;
+align-items: center;
+gap: 8px;
+}
+.societe img {
+  width: 24px;
+  border-radius: 8px;
+  border: var(--stroke) solid var(--badge-badgeneutral--border);
+  background: var(--secondarybackground);
+  overflow: hidden;
+}
+.societe a:hover {
+  text-decoration: underline;
+  text-underline-offset: 20%;
+  text-decoration-thickness: var(--stroke);
+}
+
+
+@media (min-width: 768px) {
+
+.job-row {
+padding: 32px 0px;
+}
+.societe {
+  display: flex;
+align-items: center;
+gap: 16px;
+}
+.societe img {
+  width: 36px;
+}
+
+
+}
+
+
+/*______________________________________________________
+
+                    CONTACT
+__________________________________________________________*/
+
+.contact {
+  display: flex;
+padding: 24px;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+align-self: stretch;
+
+border-radius: var(--mainborderradius);
+border: var(--stroke) solid var(--badge-badgeneutral--border);
+background: var(--secondarybackground);
+}
+
+.mail {
+  display: flex;
+padding: 2px 2px 2px 16px;
+justify-content: center;
+align-items: center;
+
+border-radius: var(--roundedradius);
+border: var(--stroke) solid var(--badge-badgeneutral--border);
+background: var(--mainbackground);
+}
+
+.mail input {
+   border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+
+.contact {
+  padding: 32px 120px;
+  gap: 40px;
+}
+ 
+}
+
+@media (min-width: 1024px) {
+
+.contact {
+  padding: 48px 264px;
+}
+
+}
+
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  margin: 80px 0 16px;
+}
+
+@media (max-width: 768px) {
+ footer svg {
+  width: 32px;
+  height: 32px;
+ }
+
+
+}
+
+
+
+
+
+
+/*__________________________________________________
+
+                    $ PAGE PROJETS
+__________________________________________________*/
+
+.projet-container {
+gap: 48px !important;
+}
+
+
+.projet-kpis {
+  display: flex;
+align-items: flex-start;
+align-content: flex-start;
+align-self: stretch;
+flex-wrap: wrap;
+
+animation-delay: .6s!important;
+  -webkit-animation-delay: .6s!important;
+  -webkit-animation: ease .8s titleinside;
+  -o-animation: ease .8s titleinside;
+  animation: ease .8s titleinside;
+  animation-fill-mode: both;
+}
+
+.projet-kpis .kpi-card {
+  flex: 48%;
+}
+
+.project-img {
+  display: flex;
+  overflow: hidden;
+  border-radius: var(--mainborderradius);
+  /* border: var(--stroke) solid var(--badge-badgeneutral--border); */
+}
+.project-img img {
+  width: 100%;
+  height: auto;
+}
+.first-img {
+  animation-delay: .8s!important;
+  -webkit-animation-delay: .8s!important;
+  -webkit-animation: ease .8s titleinside;
+  -o-animation: ease .8s titleinside;
+  animation: ease .8s titleinside;
+  animation-fill-mode: both;
+}
+
+.project-probl, .project-probl .left, .project-img-split {
+  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+/*
+.left, .right {
+  flex: 100%;
+} */
+
+.img-legende {
+  padding: 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.img-legende img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.project-process {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+}
+.process-list {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 16px;
+}
+.process-row {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding-left: 16px;
+  border-left: var(--stroke) solid var(--badge-badgeneutral--border);
+}
+.process-row ul {
+  margin: 8px 0;
+}
+.process-row li {
+  list-style: initial;
+  margin-inline-start: 24px;
+}
+.project-title-text {
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+}
+
+
+@media (min-width: 768px) {
+
+.projet-container {
+gap: 64px !important;
+}
+.projet-container .hero {
+padding: 80px;
+margin-top: 100px;
+}
+.projet-kpis .kpi-card {
+  flex: 24%;
+}
+.project-probl, .project-img-split {
+  gap: 64px;
+  flex-direction: row;
+}
+.project-probl .left {
+  flex-basis: 44%;
+}
+.project-probl .right {
+  flex-basis: 56%;
+  height: fit-content;
+}
+.process-row {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0;
+  border: none;
+}
+.process-row h5 {
+  min-width: 280px;
+}
+
+}
+
+
+/*———————————————————————————— EDF ———————————————————————*/
+.edf-project .project-img img {
+  background-color: var(--thirdbackground);
+}
+
+
+
+
+/*———————————————————————————— KURSO ———————————————————————
+.kurso-project .first-img img {
+  background-color: transparent; !important;
+} */
+.kurso-video {
+    justify-content: center;
+    background-color: #c9b5ff;
+    border-radius: var(--mainborderradius);
+    overflow: hidden;
+    padding: 24px;
+}
+ .kurso-video video {
+    width: 280px;
+}
+
+
+
+
+/*———————————————————————————— SERENISIA ———————————————————————*/
+
+.serenisia-project .project-img img {
+  background-color: var(--thirdbackground);
+}
+
+
+
+
+/*-------------------------------------------------------------------\
+                $ Tablette ____________________________________________
+\-------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+.sol-menu li:nth-child(-n + 2) {
+  display: none;
+}
+.badge-head {
+  display: none;
+}
+
+
+
+}
+
+@media (min-width: 768px) {
+
+.main-container {
+  gap: 240px;
+  padding: 24px;
+}
+
+.badge-head-min {
+  display: none;
+}
+.hero {
+  margin-top: 180px;
+}
+/*
+.hero::before {
+  top:80px;
+  width: 180px;
+  height: 180px;
+  background-position: 40px;
+}
+*/
+
+
+
+.container {
+  margin: 12px 164px;
+}
+
+
+
+
+
+
+
+.about-title {
+  font-size: 120px;
+}
+
+.illustration-prez {
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+}
+
+.petite-illu {
+  display: none;
+}
+.big-illu {
+  display: inherit;
+}
+
+
+.project-max {
+  margin: 0 auto;
+  max-width: 980px;
+}
+.content-portrait {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+}
+.presentation {
+  display: inline-block;
+  vertical-align: middle;
+  width: 59%;
+}
+.pres-texte {
+  text-align: left;
+}
+
+
+
+.projet-img li {
+  display: inline-block;
+  width: 32%;
+}
+.projbookmain li {
+  width: 45%;
+  margin: 12px;
+}
+.projet-visuel {
+  width: 100%;
+}
+.gif-content {
+  position: relative;
+  width: 100%
+}
+.trhackergif {
+    width: 72%;
+    top: 20%;
+    left: 18%;
+}
+
+
+
+
+
+}
+
+/*-----------------------------------------------------------------------------\
+                $ WEB _________________________________________________________
+\-----------------------------------------------------------------------------*/
+
+
+@media (min-width: 1024px) {
+
+.hero {
+  margin-top: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------WEB SOCIAL------------------*/
+
+
+
+.social {
+  margin: 140px 0 40px;
+  position: relative;
+  text-align: center;
+}
+/*
+.social-content {
+  position: absolute;
+  right: 0;
+  margin: 32px 0;
+} */
+.container {
+  margin: 0;
+}
+.container li {
+  display: inline-block;
+  margin-left: 48px;
+  position: relative;
+}
+.container li:first-child {
+  margin-left: 0px;
+}
+
+/*
+.container a:hover .tooltip {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+}
+
+
+.tooltip {
+    right: calc(100% + 18px);
+    -webkit-transform-origin: calc(100% + 40px) center;
+    transform-origin: calc(100% + 40px) center;
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+} */
+.tooltip {
+  display: inherit;
+  text-align: center;
+    height: 34px;
+    line-height: 36px;
+    padding: 0 10px;
+    font-size: 15px;
+    position: absolute;
+    top: -42px;
+    left: -45px;
+    background: var(--white);
+    color: var(--dark);
+    border-radius: 12px;
+    width: 120px;
+    white-space: nowrap;
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    box-shadow: 0 2px 16px #D3D6DA;
+}
+.tooltip:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--white);
+    position: absolute;
+    border-radius: 0 3px 0 3px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 27px;
+    right: 45%;
+    z-index: 2;
+    box-shadow: 3px -3px 4px #d3d6da6b;
+}
+.container li:hover .tooltip {
+  opacity: 1;
+  top: -64px;
+}
+
+
+
+
+
+/*___________________________
+
+            $ About
+_____________________________*/
+
+.container-illu {
+  margin: 120px 0;
+}
+
+.about-title {
+  font-size: 160px;
+}
+
+.content-portrait {
+  width: 25%;
+}
+.portrait {
+  margin: inherit;
+}
+.presentation {
+  width: 74%;
+}
+
+.btn {
+  width: fit-content;
+}
+
+
+
+
+.hproj {
+    margin-top: 20px;
+}
+.headproj h2 {
+  padding-bottom: 0;
+}
+
+.btnhome {
+  float: left;
+  margin-top: -40px;
+  margin-left: 60px;
+}
+
+.back {
+  margin-left: 0;
+  margin-top: 32px;
+}
+
+
+.texte-proj {
+  width: 35%;
+  position: fixed;
+  margin-left: 3%;
+  margin-top: 0px;
+}
+.textobook {
+  width: 38%;
+}
+.texte-proj, .projet-img {
+  display: inline-block;
+}
+
+.projet-img {
+  width: 45%;
+  float: right;
+  margin-right: 3%;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.projbookmain {
+  width: 52%;
+}
+
+.projet-img li {
+  width: 49%;
+}
+.projbookmain li {
+  width: 96%;
+}
+.projbookmin {
+  width: 47%!important;
+  margin: 16px 0 0 0!important;
+}
+.projet-visuel {
+  width: 95%
+}
+.projinovatiq {
+  width: 42%!important;
+}
+
+
+
+
+}
+
+
+
