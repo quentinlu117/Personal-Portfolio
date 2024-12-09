@@ -692,7 +692,7 @@ __________________________________________________________*/
 
 .contact {
   display: flex;
-padding: 24px;
+padding: 16px;
 flex-direction: column;
 align-items: center;
 gap: 24px;
