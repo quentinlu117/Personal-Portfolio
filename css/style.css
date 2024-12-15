@@ -421,6 +421,7 @@ align-self: stretch;
 .intro-title span {
   color: var(--text-secondarytitle);
 }
+
 .rs-links {
   display: flex;
 align-items: center;
@@ -487,6 +488,9 @@ flex-wrap: wrap;
 }
 .serenisia-bg {
   background-image: url(../elements/projets/serenisia/serenisia-main.png);
+}
+.butterfly-bg {
+  background-image: url(../elements/projets/butterfly/butterfly-main.png);
 }
 .butterfly a:hover {
   background-color: #BFDDE3;
@@ -806,6 +810,7 @@ animation-delay: .6s!important;
 .project-img img {
   width: 100%;
   height: auto;
+  background-color: var(--thirdbackground);
 }
 .first-img {
   animation-delay: .8s!important;
@@ -859,10 +864,10 @@ animation-delay: .6s!important;
   padding-left: 16px;
   border-left: var(--stroke) solid var(--badge-badgeneutral--border);
 }
-.process-row ul {
+.project-process ul {
   margin: 8px 0;
 }
-.process-row li {
+.project-process li {
   list-style: initial;
   margin-inline-start: 24px;
 }
@@ -910,11 +915,6 @@ margin-top: 100px;
 }
 
 
-/*———————————————————————————— EDF ———————————————————————*/
-.edf-project .project-img img {
-  background-color: var(--thirdbackground);
-}
-
 
 
 
@@ -932,14 +932,8 @@ margin-top: 100px;
  .kurso-video video {
     width: 280px;
 }
-
-
-
-
-/*———————————————————————————— SERENISIA ———————————————————————*/
-
-.serenisia-project .project-img img {
-  background-color: var(--thirdbackground);
+.kurso-project .project-img img {
+  background-color: transparent;
 }
 
 
@@ -993,7 +987,9 @@ margin-top: 100px;
 
 
 
-
+.intro-title p {
+  width: 82%;
+}
 
 
 .about-title {

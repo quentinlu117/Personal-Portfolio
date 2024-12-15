@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Serenisia — Webapp </title>
+	<title>Butterfly — Webapp </title>
 	<meta name="description" content="Case Study, design Ux Ui application Webapp" />
 	<meta name="theme-color" content="#000">
 
@@ -87,14 +87,14 @@
 
 <!-- ********************* CONTENT *************** -->
 
-<div class="main-container projet-container serenisia-project">
+<div class="main-container projet-container butterfly-project">
 
 <div class="hero">
 	<div class="intro-title">
 		<div class="badge badge-neutral">Logiciel Webapp</div>
-		<h1 class="h1">Logiciel Serenisia</h1>
+		<h1 class="h1">Logiciel Buttefly</h1>
 		<p class="paragraph">
-			Présentation des fonctionnalités du logiciel Sérénisia sur lesquelles j'ai pu travailler en 2023, un logiciel utilisé par les conseillés en gestion de patrimoine (CGP). Ce lot de fonctionnalités fait suite à la mise en production d'un MVP afin de proposer toujours plus de solutions innovantes et une satifisfaction utilisateur maximale.
+			Présentation des fonctionnalités du logiciel Butterfly sur lesquelles j'ai pu travailler en 2023. Ce travail fait suite au développement d'un premier POC 2022 pour la société Oksigen et financé par le Groupe ERAM, qui consiste à disposer d'un formulaire de saisie permettant d'effectuer un calcul et d'obtenir un résultat d'impact écologique d'un produit de type Textile ou Chaussures.
 		</p>
 	</div>
 </div>
@@ -107,7 +107,7 @@
 		<div class="kpi-row">
 			<div class="kpi-card">
 				<p class="subtitle">Client</p>
-				<h3 class="h3">Fletesia</h3>
+				<h3 class="h3">Oksigen</h3>
 			</div>
 			<div class="kpi-card">
 				<p class="subtitle">Produit</p>
@@ -115,7 +115,7 @@
 			</div>
 			<div class="kpi-card">
 				<p class="subtitle">Durée</p>
-				<h3 class="h3">3 mois</h3>
+				<h3 class="h3">6 mois</h3>
 			</div>
 			<div class="kpi-card">
 				<p class="subtitle">Année</p>
@@ -128,7 +128,7 @@
 <!-- _____________________________PROJET CONTENT_________________________-->
 
 <div class="project-img first-img">
-	<img src="elements/projets/serenisia/serenisia-main.png" alt="image-serenisia-presentation">
+	<img src="elements/projets/butterfly/butterfly-main.png" alt="image-butterfly-presentation">
 </div>
 
 
@@ -137,97 +137,131 @@
 
 	<div class="project-title-text flex-col">
 		<h3>Contexte du projet 🎯</h3>
-		<p>Suite à livraison en production du MVP Serenisia en février 2023, de nouvelles fonctionnalités viennent enrichir la solution afin de répondre aux attentes des futurs utilisateurs et offrir un niveau de service aussi haut que possible dès l'entrée sur le marché de Serenisia. Les équipes Fletesia ont décidé d'effectuer un nouvel investissement afin de solidifier et faire évoluer le produit de manière impactante.</p>
+		<p>Suite à livraison en production du POC de Butterfly en 2022, de nouvelles fonctionnalités viennent enrichir la solution afin d'obtenir un MVP plus robuste pour le groupe ERAM sur le long et que le logiciel puisse devenir un outil métier et ainsi capter de nouveaux clients.</p>
+
+		<div class="bg-border padding-base project-title-text flex-col">
+			<h4>Présentation du logiciel</h4>
+			<p>Le Logiciel Butterfly est une calculatrice d'impact environnemental pour textiles et chaussures. À l'origine sous forme de tableur excel très complexe, Oksigen a évoqué avec nous leur souhait de digitaliser leur process métier Bas Carbone en 2022. Le but est d'obtenir une analyse complète d'un produit (chaussure ou textile) en ajoutant des données sur la fabrication du produit, son origine, les matériaux utilisés, la quantité, le transport et pleins d'autres. Cette analyse peut être également sous forme de "bilan simplifié" afin d'obtenir rapidement une idée du score d'un produit et ainsi pouvoir prendre des décisions sur des modes de fabrication, choix des matériaux ou du transport pouvant impacter le score final.</p>
+		</div>
+
+			<div class="project-img">
+		<img src="elements/projets/butterfly/butterfly-analysefull.png" alt="butterfly-analyse-exemple">
+	</div>
+
+
 	</div> 
 
-
-	<div class="flex project-img-split">
-		<div class="project-img left">
-			<img src="elements/projets/serenisia/serenisia-userflow.jpg" alt="userflows-serenisia">
-		</div>
-		<div class="project-img right">
-			<img src="elements/projets/serenisia/serenisia-userflow2.jpg" alt="userflows-serenisia-2">
-		</div>
-	</div>
 
 
 
 <div class="project-process flex">
 	<h3>Fonctionnalités</h3>
+	<div>
+		<p>Après 2 mois de cadrage et d'ateliers de co-conception avec le client, nous avons pu établir une liste de fonctionnalités qui seront travaillées pour le MVP 2023. Certaines mises à jour par rapport au POC :</p>
+		<ul class="paragraph">
+			<li>Formulaire de création d'analyse</li>
+			<li>Résultat d'une analyse et son statut</li>
+			<li>Tableau de listing des analyses et leur filtrage</li>
+		</ul>
+		<p>D'autres sont nouvelles :</p>
+		<ul class="paragraph">
+			<li>un Onboarding</li>
+			<li>Paramètres du workspace</li>
+			<li>un module de comparaison</li>
+		</ul>
+	</div>
+
 
 	<div class="process-list flex">
 
 		<div class="process-row flex">
-			<h5>Simulateur</h5>
-			<p>Fonctionnalité de <strong>simulateur de placement</strong> basé sur une méthode de calcul fournie par Fletesia, téléchargement de la simulation effectuée au format PDF et possibilité d’enregistrer les simulations effectuées</p>
+			<h5>Résultat d'analyse</h5>
+			<p>Mise à jour de la visualisation du statut de l'analyse (en cours, terminée, publiée), mise à jour de l'affichage du résultat et création d'onglets <strong>Fiche Intéractive</strong> et d'un <strong>module d'intégration</strong> du résultat.</p>
 		</div>
 		<div class="flex project-img-split">
 			<div class="project-img left">
-				<img src="elements/projets/serenisia/serenisia-simulation.png" alt="serenisia-simulateur">
+				<img src="elements/projets/butterfly/butterfly-analyse.png" alt="butterfly-analyse">
 			</div>
 			<div class="project-img right">
-				<img src="elements/projets/serenisia/serenisia-simulation2.png" alt="serenisia-simulateur-2">
+				<img src="elements/projets/butterfly/butterfly-analyse2.png" alt="butterfly-analyse-2">
 			</div>
 		</div>
 
 		<div class="project-img">
-			<img src="elements/projets/serenisia/serenisia-simulation3.png" alt="serenisia-simulateur-3">
+			<img src="elements/projets/butterfly/butterfly-analyse3.png" alt="butterfly-analyse-3">
 		</div>
 
 
 
 		<div class="process-row flex">
 			<h5>Comparateur</h5>
-			<p>Mise en place d'un <strong>comparateur de simulations</strong> permettant de comparer des résultats de simulation du même type et possibilité pour le CGP de commenter la comparaison à travers un champ texte, l'envoyer par mail et la télécharger en PDF.</p>
+			<p>Mise en place d'un <strong>comparateur d'analyses</strong> permettant de comparer des résultats des analyses terminées et du même type. La comparaison affiche les deux analyses sélectionnées et toutes leurs données de la fiche résultat.</p>
 		</div>
 		<div class="project-img">
-			<img src="elements/projets/serenisia/serenisia-compare.png" alt="serenisia-comparateur">
+			<img src="elements/projets/butterfly/butterfly-compare.png" alt="butterfly-comparateur">
 		</div>
-		<div class="project-img">
-			<img src="elements/projets/serenisia/serenisia-compare2.png" alt="serenisia-comparateur-2">
-		</div>
-
 
 
 
 
 		<div class="process-row flex">
-			<h5>Agrégateur d'actifs</h5>
-			<div class="paragraph">
-					<ul class="paragraph">
-						<li>Mise en place d'un agrégateur d'actif, permettant au CGP de centraliser au sein d'un Dashboard :
-							<ul>
-								<li>Les actifs de son client récupérés via l'API Linxo</li>
-								<li>Les actifs ajoutés manuellement pour son client</li>
-							</ul>
-						</li>
-						<li>Deux niveaux de détails (données) pour chaque actif importé depuis Linxo :
-							<ul>
-								<li>Niveau macro (vue d'ensemble de l'actif)</li>
-								<li>Niveau micro (composition détaillée de l'actif)</li>
-							</ul>
-						</li>
-						<li>Mise en place d'un script de vérification des SRRI des actifs Linxo et mise en regard avec le SRRI maximal défini pour la Fiche Client avec système d'alerte si le SRRI des actifs est supérieur au SRRI de la Fiche Client</li>
-						<li>Import des données de l'agrégateur au sein du Recueil d'Informations Patrimoniales, section "Patrimoine Privé Financier"</li>
-					</ul>
+			<h5>Listing des analyses</h5>
+			<div>
+				<p>
+					Amélioration du listing des analyses, du filtrage et ajout de fonctionnalités :
+				</p>
+				<ul class="paragraph">
+					<li>Nouveau panneau de filtrage sous forme de sidePanel pour répondre à un besoin d'ajout de nouveaux filtres.</li>
+					<li>Possibilité de multi-selectionner des analyses</li>
+					<li>Nouvelles actions sur les analyses sélectionnées : Export, Comparaison, Duplication et Suppression.</li>
+				</ul>
 			</div>
-		</div>
-
-		<div class="flex project-img-split">
-			<div class="project-img left">
-				<img src="elements/projets/serenisia/serenisia-linxo.png" alt="serenisia-simultateur">
-			</div>
-			<div class="project-img right">
-				<img src="elements/projets/serenisia/serenisia-linxo2.png" alt="serenisia-simultateur-2">
-			</div>
-		</div>
-
-		<div class="project-img">
-			<img src="elements/projets/serenisia/serenisia-linxo3.png" alt="serenisia-simultateur-3">
 		</div>
 		<div class="project-img">
-			<img src="elements/projets/serenisia/serenisia-linxo4.png" alt="serenisia-simultateur-3">
+			<img src="elements/projets/butterfly/butterfly-liste.png" alt="butterfly-listing">
 		</div>
+		<div class="project-img">
+			<img src="elements/projets/butterfly/butterfly-liste2.png" alt="butterfly-listing-actions">
+		</div>
+
+
+
+
+		<div class="process-row flex">
+			<h5>Import d'Analyses</h5>
+			<div>
+				<p>
+					Ajout d'un module d'import massif d'analyses suite à la mise en place d'un template format <code>.xls</code> pouvant créer un grand nombre d'analyses. L'import s'effectue en plusieurs étapes :
+				</p>
+				<ul class="paragraph">
+					<li>Ajout du fichier <code>.xls</code></li>
+					<li>Analyse du fichier, détection de analyses et d'erreurs dans le fichier.</li>
+					<li>Si des analyses importées existent déjà dans le workspace, un module de gestion permet de choisir comment sera traitée l'analyse en doublon.</li>
+					<li>Étape finale récapitulative avant de lancer l'import.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="project-img">
+			<img src="elements/projets/butterfly/butterfly-import.png" alt="butterfly-import">
+		</div>
+		<div class="project-img">
+			<img src="elements/projets/butterfly/butterfly-import2.png" alt="butterfly-import">
+		</div>
+
+
+		<div class="process-row flex">
+			<h5>Dashboard</h5>
+			<p>Ajout d'un onglet Dashboard permettant de retrouver une douzaine de Datas récapitulatives des analyses publiées d'un workspace, qu'elles soient sous format Bilan simplifié ou Analayses environnementales</p>
+		</div>
+		<div class="project-img">
+			<img src="elements/projets/butterfly/butterfly-dashboard.png" alt="butterfly-dashboard">
+		</div>
+
+
+
+
+
+
 
 	</div>
 
