@@ -6,8 +6,8 @@
 
 	<title>Quentin Luylier | Product Designer, Designer Ux / Ui</title>
 
-	<meta name="keywords" content="quentin, luylier, quentin luylier, portfolio, design, product designer, designer, école de design Nantes atlantique, Nantes, ux, ui, ux designer, Designer Nantes"/>
-	<meta name="description" content="Product Designer basé à Nantes. Spécialisé dans la conception d'application mobiles et design Ux Ui." />
+	<meta name="keywords" content="quentin, luylier, quentin luylier, portfolio, design, product designer, designer, école de design Nantes atlantique, Nantes, ux, ui, ux designer, Designer Nantes">
+	<meta name="description" content="Product Designer basé à Nantes. Spécialisé dans la conception d'application mobiles et design Ux Ui.">
 	<meta name="theme-color" content="#000">
 
 	<link rel="shortcut icon" type="image/x-icon" href="elements/logoiicon.png">
@@ -18,8 +18,6 @@
 
 	<!-- IMPORT FLOWBITE -->
 	<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
-
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -62,33 +60,47 @@
 							</a>
 							<div class="badge badge-transparent badge-head">
 								<div class="blob"></div>
-								Available for work
+								<span data-i18n="nav.available.long">Available for work</span>
 							</div><div class="badge badge-transparent badge-head-min">
 								<div class="blob"></div>
-								Available
+								<span data-i18n="nav.available">Available</span>
 							</div>
 						</div>
 					</div>
 					<div class="ac">
 						<ul class="sol-menu">
 							<li>
-								<a href="#projects" class="btn btn-l btn-neutral btn-neutral--ghost">Work</a>
+								<a href="#projects" class="btn btn-l btn-neutral btn-neutral--ghost" data-i18n="nav.work">Work</a>
 							</li>
 							<li>
-								<a href="#about" class="btn btn-l btn-neutral btn-neutral--ghost">About</a>
+								<a href="#about" class="btn btn-l btn-neutral btn-neutral--ghost" data-i18n="nav.about">About</a>
 							</li>
 							<li>
-								<button onclick="$crisp.push(['do', 'chat:open'])" class="btn btn-l btn-primary">Let's Talk
+								<button onclick="$crisp.push(['do', 'chat:open'])" class="btn btn-l btn-primary"><span data-i18n="nav.contact">Let's Talk</span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
 								</button>
+							</li>
+							<li>
+								<!-- LANG TOGGLE -->
+								<div class="lang-switcher">
+									<!-- Mobile dropdown -->
+									<button class="lang-dropdown-toggle" aria-expanded="false">
+										<span class="lang-current">FR</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+									</button>
+									<div class="lang-dropdown-menu">
+										<button class="lang-dropdown-item" data-lang="fr">Français 🇫🇷</button>
+										<button class="lang-dropdown-item" data-lang="en">English 🇬🇧</button>
+									</div>
+									<!-- Desktop toggles -->
+									<button class="lang-toggle" data-lang="fr">FR</button>
+									<button class="lang-toggle" data-lang="en">EN</button>
+								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</header>
-
-
-
 
 
 <!-- ********************* CONTENT *************** -->
@@ -97,12 +109,15 @@
 
 <div class="hero">
 	<div class="intro-title">
-		<div class="badge badge-neutral">Hello, moi c'est Quentin 🤙</div>
-		<h1 class="headline-h1">Product Designer<br><span>depuis plus de 5 ans</span></h1>
+		<div class="badge badge-neutral" data-i18n="hero.hello">Hello, moi c'est Quentin 🤙</div>
+		<h1 class="headline-h1">
+      <span data-i18n="hero.title">Product Designer</span><br>
+      <span class="headline-secondary" data-i18n="hero.subtitle">depuis plus de 5 ans</span>
+    </h1>
 	</div>
 
 	<div class="rs-links">
-		<a href="mailto:qluylier@outlook.fr" class="btn btn-l btn-neutral btn-neutral--outline">Contact
+		<a href="mailto:qluylier@outlook.fr" class="btn btn-l btn-neutral btn-neutral--outline"><span data-i18n="hero.cta">Contact</span>
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
 		</a>
 		<a href="https://dribbble.com/quentinlu" target="_blank" alt="Dribbble" class="btn btn-l btn-neutral btn-neutral--ghost btn-icon">
@@ -122,15 +137,14 @@
 </div>
 
 
-
-<!-- _____________________________WORKS__________________________-->
+<!-- _____________________________WORKS__________________________ -->
 
 <section id="projects">
 	<div class="projects">
-		
+
 		<div class="intro-title">
-			<div class="badge badge-neutral">🚀 Featured Work • 2020 - 2024</div>
-			<h2><span>Mes derniers </span>projets</h2>
+			<div class="badge badge-neutral" data-i18n="projects.badge">🚀 Featured Work • 2020 - 2024</div>
+			<h2><span data-i18n="projects.title.prefix">Mes derniers </span><span data-i18n="projects.title">projets</span></h2>
 		</div>
 
 		<div class="projects-list">
@@ -139,8 +153,8 @@
 				<a href="edf-enr.html">
 					<div class="head-project">
 						<div class="title-project">
-							<h5>Ux Ui Design</h5>
-							<h4>Espace Client Photovoltaïque</h4>
+							<h5 data-i18n="project.edf.tag">Ux Ui Design</h5>
+							<h4 data-i18n="project.edf.title">Espace Client Photovoltaïque</h4>
 						</div>
 						<div class="project-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -153,8 +167,8 @@
 				<a href="kurso.html">
 					<div class="head-project">
 						<div class="title-project">
-							<h5>Branding — Ux Ui Design</h5>
-							<h4>Kurso App</h4>
+							<h5 data-i18n="project.kurso.tag">Branding — Ux Ui Design</h5>
+							<h4 data-i18n="project.kurso.title">Kurso App</h4>
 						</div>
 						<div class="project-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -167,8 +181,8 @@
 				<a href="serenisia.html">
 					<div class="head-project">
 						<div class="title-project">
-							<h5>Webapp</h5>
-							<h4>Logiciel Serenisia</h4>
+							<h5 data-i18n="project.serenisia.tag">Webapp</h5>
+							<h4 data-i18n="project.serenisia.title">Logiciel Serenisia</h4>
 						</div>
 						<div class="project-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -180,8 +194,8 @@
 				<a href="butterfly.html">
 					<div class="head-project">
 						<div class="title-project">
-							<h5>Webapp</h5>
-							<h4>Logiciel Butterfly</h4>
+							<h5 data-i18n="project.butterfly.tag">Webapp</h5>
+							<h4 data-i18n="project.butterfly.title">Logiciel Butterfly</h4>
 						</div>
 						<div class="project-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -197,7 +211,7 @@
 			</ul>
 		</div>
 
-		<a href="https://dribbble.com/quentinlu" target="_blank" class="btn btn-l btn-primary">En voir plus sur Dribbble
+		<a href="https://dribbble.com/quentinlu" target="_blank" class="btn btn-l btn-primary"><span data-i18n="projects.dribbble">En voir plus sur Dribbble</span>
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
 			<line x1="7" y1="17" x2="17" y2="7"></line>
 			<polyline points="7 7 17 7 17 17"></polyline>
@@ -209,7 +223,7 @@
 </section>
 
 
-<!-- _____________________________ABOUT__________________________-->
+<!-- _____________________________ABOUT__________________________ -->
 
 
 <section id="about">
@@ -228,29 +242,29 @@
 
 		<div class="about-text">
 			<div class="intro-title">
-				<div class="badge badge-neutral">👨‍💻 About Me — Quentin Luylier</div>
-				<h2>Je suis Product designer <span>passionné par la création de produits numériques.</span></h2>
+				<div class="badge badge-neutral" data-i18n="about.badge">👨‍💻 About Me — Quentin Luylier</div>
+				<h2><span data-i18n="about.title.prefix">Je suis Product designer </span><span data-i18n="about.title">passionné par la création de produits numériques.</span></h2>
 			</div>
-			<p>Au cours des 5 dernières années, j'ai travaillé sur de nombreux projets dans de nombreux secteurs, des applications mobiles aux produits web. Je traduis les idées en solutions efficaces et bien conçues. Mon approche du design est basée sur la recherche et la collaboration. J'essaie toujours de concevoir des produits et interfaces innovants. Je suis passionné par le design et j'aime apprendre constamment de nouvelles choses !</p>
+			<p data-i18n="about.description">Au cours des 5 dernières années, j'ai travaillé sur de nombreux projets dans de nombreux secteurs, des applications mobiles aux produits web. Je traduis les idées en solutions efficaces et bien conçues. Mon approche du design est basée sur la recherche et la collaboration. J'essaie toujours de concevoir des produits et interfaces innovants. Je suis passionné par le design et j'aime apprendre constamment de nouvelles choses !</p>
 
 			<div class="kpi-container">
 				<div class="kpi-row">
 					<div class="kpi-card">
-						<p class="subtitle">Années d’expériences</p>
+						<p class="subtitle" data-i18n="stats.years.label">Années d'expériences</p>
 						<h3 class="h3">5+</h3>
 					</div>
 					<div class="kpi-card">
-						<p class="subtitle">Clients</p>
+						<p class="subtitle" data-i18n="stats.clients.label">Clients</p>
 						<h3 class="h3">20+</h3>
 					</div>
 				</div>
 				<div class="kpi-row">
 					<div class="kpi-card">
-						<p class="subtitle">Projets terminés</p>
+						<p class="subtitle" data-i18n="stats.projects.label">Projets terminés</p>
 						<h3 class="h3">30+</h3>
 					</div>
 					<div class="kpi-card">
-						<p class="subtitle">Heures de design</p>
+						<p class="subtitle" data-i18n="stats.hours.label">Heures de design</p>
 						<h3 class="h3">10 000+</h3>
 					</div>
 				</div>
@@ -262,14 +276,11 @@
 </section>
 
 
-
-
 <!-- _____________________________ANIMATED TEXT__________________________
 
 
-
 <section id="scrolling-text">
-	
+
 	<div class="scrolling-text">
 				<div class="scrolling-container">
 					<ul class="h5">
@@ -309,16 +320,14 @@
 -->
 
 
-
-
-<!-- _____________________________EXPERIENCE__________________________-->
+<!-- _____________________________EXPERIENCE__________________________ -->
 
 
 <section id="career">
 	<div class="career-container">
 		<div class="intro-title">
-			<div class="badge badge-neutral">💼 Carrière</div>
-			<h2><span>Petit récap de </span>mon Expérience</h2>
+			<div class="badge badge-neutral" data-i18n="career.badge">💼 Carrière</div>
+			<h2><span data-i18n="career.title.prefix">Petit récap de </span><span data-i18n="career.title">mon Expérience</span></h2>
 			<div class="deco deco-5"></div>
 		</div>
 
@@ -336,7 +345,7 @@
 				</div>
 				<div class="job-right">
 					<div class="badge badge-transparent">2020 → 2024</div>
-					<h5>Lead Ux/Ui Designer</h5>
+					<h5 data-i18n="job.lachouette.title">Lead Ux/Ui Designer</h5>
 				</div>
 			</li>
 			<li class="job-row">
@@ -352,14 +361,14 @@
 				</div>
 				<div class="job-right">
 					<div class="badge badge-transparent">2018 → 2020</div>
-					<h5>Designer Ux/Ui</h5>
+					<h5 data-i18n="job.ripple.title">Designer Ux/Ui</h5>
 				</div>
 			</li>
 			<li class="job-row">
 				<div class="job-left">
 					<div class="badge badge-transparent badge-icon">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-						Hamrun, Malte
+						Hamrun, Malta
 					</div>
 					<div class="societe">
 						<img src="elements/img/societe/9h.png" alt="">
@@ -368,14 +377,14 @@
 				</div>
 				<div class="job-right">
 					<div class="badge badge-transparent">2017 → 2018</div>
-					<h5>Designer Ux/Ui (Stage Erasmus)</h5>
+					<h5 data-i18n="job.9h.title">Designer Ux/Ui (Stage Erasmus)</h5>
 				</div>
 			</li>
 			<li class="job-row">
 				<div class="job-left">
 					<div class="badge badge-transparent badge-icon">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-						Riga, Lettonie
+						Riga, Latvia
 					</div>
 					<div class="societe">
 						<img src="elements/img/societe/awsmd.png" alt="">
@@ -384,7 +393,7 @@
 				</div>
 				<div class="job-right">
 					<div class="badge badge-transparent">2017</div>
-					<h5>Designer Ux/Ui (Stage Erasmus)</h5>
+					<h5 data-i18n="job.awsmd.title">Designer Ux/Ui (Stage Erasmus)</h5>
 				</div>
 			</li>
 			<li class="job-row">
@@ -400,13 +409,13 @@
 				</div>
 				<div class="job-right">
 					<div class="badge badge-transparent">2016</div>
-					<h5>Graphic / Web Designer (Stage)</h5>
+					<h5 data-i18n="job.zandko.title">Graphic / Web Designer (Stage)</h5>
 				</div>
 			</li>
 
 		</ul>
 
-		<a href="elements/FR__CV_QL_2024.pdf" target="_blank" class="btn btn-l btn-primary">Voir mon CV complet
+		<a href="elements/FR_CV_QL_2026.pdf" target="_blank" class="btn btn-l btn-primary" id="cv-link"><span data-i18n="career.cv">Voir mon CV complet</span>
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
 			<line x1="7" y1="17" x2="17" y2="7"></line>
 			<polyline points="7 7 17 7 17 17"></polyline>
@@ -419,32 +428,28 @@
 </section>
 
 
-
-
-
-
-<!-- _____________________________ CONTACT _______________________________-->
+<!-- _____________________________ CONTACT _______________________________ -->
 
 
 <section id="contact">
 	<div class="contact">
 
 		<div class="intro-title">
-			<div class="badge badge-neutral">🤝 Contact</div>
-			<h2><span>Vous souhaitez que l’on </span>travaille ensemble ?</h2>
+			<div class="badge badge-neutral" data-i18n="contact.badge">🤝 Contact</div>
+			<h2><span data-i18n="contact.title.prefix">Vous souhaitez que l'on </span><span data-i18n="contact.title">travaille ensemble ?</span></h2>
 		</div>
 
-		<p>N'hésitez pas à me contacter pour parler d’un projet professionnel, d’une collaboration ou simplement dire bonjour 👋</p>
+		<p data-i18n="contact.description">N'hésitez pas à me contacter pour parler d'un projet professionnel, d'une collaboration ou simplement dire bonjour 👋</p>
 
 		<div class="rs-links">
 
 			<div class="mail">
 				<input id="copy-text" type="text" class="mail-input paragraph" value="qluylier@outlook.fr" disabled readonly>
 				<button data-copy-to-clipboard-target="copy-text" class="btn btn-l btn-primary">
-					<span id="default-message">Copier</span>
+					<span id="default-message" data-i18n="contact.copy">Copier</span>
 					<span id="success-message" class="hidden">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
-						Copié !
+						<span data-i18n="contact.copied">Copié !</span>
 					</span>
 				</button>
 			</div>
@@ -468,13 +473,9 @@
 </section>
 
 
-
-
-
 </div>
 
- <!--********************* FOOTER *************** -->
-
+ <!-- ********************* FOOTER *************** -->
 
 
 <footer>
@@ -486,18 +487,13 @@
 			<path d="M19.1875 41.6045V31.0309H19.0594C18.4826 32.0776 17.6602 32.8893 16.5922 33.4661C15.5242 34.0214 14.2425 34.2991 12.7472 34.2991C10.9316 34.2991 9.36156 33.8933 8.03719 33.0816C6.73418 32.2699 5.73022 31.1164 5.02532 29.6211C4.34177 28.1045 4 26.3315 4 24.3023C4 22.273 4.35245 20.5107 5.05736 19.0155C5.76227 17.5202 6.79826 16.3667 8.16536 15.555C9.53245 14.722 11.1879 14.3054 13.1317 14.3054C14.7124 14.3054 16.0582 14.6045 17.1689 15.2026C18.3011 15.7793 19.1982 16.6231 19.8604 17.7338H21.2061V14.6899H25.7239V19.0796H23.5451V41.6045H19.1875ZM13.8687 30.5503C15.4921 30.5503 16.7844 30.091 17.7457 29.1725C18.7069 28.254 19.1875 27.0151 19.1875 25.4558V23.1488C19.1875 21.5895 18.7069 20.3505 17.7457 19.432C16.7844 18.5135 15.4921 18.0542 13.8687 18.0542C12.0957 18.0542 10.7287 18.6096 9.76742 19.7204C8.82754 20.8311 8.3576 22.3584 8.3576 24.3023C8.3576 26.2461 8.82754 27.7734 9.76742 28.8842C10.7287 29.9949 12.0957 30.5503 13.8687 30.5503Z" fill="var(--text-titles)"/>
 		</svg>
 	</a>
-	<p class="btn-s">2024 © Quentin Luylier — Tous droits réservés.</p>
+	<p class="btn-s" data-i18n="footer.rights">2024 © Quentin Luylier — Tous droits réservés.</p>
 
 </footer>
 
 
-
-
-
-
-
 <script>
-				
+
 window.addEventListener('load', function() {
     const clipboard = FlowbiteInstances.getInstance('CopyClipboard', 'copy-text');
     const $defaultMessage = document.getElementById('default-message');
@@ -517,6 +513,7 @@ window.addEventListener('load', function() {
 
 </script>
 
+<script type="text/javascript" src="js/i18n.js"></script>
 
 </body>
 </html>
