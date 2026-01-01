@@ -88,7 +88,7 @@ code {
   padding: 2px;
   border: var(--stroke) solid var(--badge-badgeneutral--border);
   border-radius: 4px;
-  color: var(--text-secondarytitle);
+  color: var(--primary);
 }
 
 /* ————————————— TABLET TEXT STYLES ————————————————*/

@@ -3,15 +3,15 @@
 const translations = {
   fr: {
     // Nav
-    "nav.work": "Work",
-    "nav.about": "About",
-    "nav.contact": "Let's Talk",
-    "nav.available": "Available",
-    "nav.available.long": "Available for work",
+    "nav.work": "Projets",
+    "nav.about": "À propos",
+    "nav.contact": "Contact",
+    "nav.available": "Disponible",
+    "nav.available.long": "Disponible",
 
     // Hero
-    "hero.hello": "Hello, moi c'est Quentin 🤙",
-    "hero.title": "Product Designer",
+    "hero.hello": "Bonjour, moi c'est Quentin 🤙",
+    "hero.title": "Designer Ux/Ui",
     "hero.subtitle": "depuis plus de 5 ans",
     "hero.cta": "Contact",
 
@@ -78,7 +78,7 @@ const translations = {
 
     // Hero
     "hero.hello": "Hello, I'm Quentin 🤙",
-    "hero.title": "Product Designer",
+    "hero.title": "Ux/Ui Designer",
     "hero.subtitle": "for over 5 years",
     "hero.cta": "Contact",
 
@@ -185,6 +185,35 @@ function applyTranslations(lang) {
       ? 'elements/FR_CV_QL_2026.pdf'
       : 'elements/EN_RESUME_QL_2026.pdf';
   }
+
+  // Met à jour les liens vers les projets selon la langue
+  updateProjectLinks(lang);
+}
+
+// Met à jour les liens des projets (FR ↔ EN)
+function updateProjectLinks(lang) {
+  const projectLinks = document.querySelectorAll('a[href$=".html"]');
+
+  projectLinks.forEach(link => {
+    let href = link.getAttribute('href');
+
+    // Ignore les liens externes et index.html
+    if (href.startsWith('http') || href.startsWith('index.html') || href.startsWith('#')) {
+      return;
+    }
+
+    // Récupère le nom du fichier (ex: "kurso.html" ou "en/kurso.html")
+    const isEnglishLink = href.startsWith('en/');
+    const fileName = isEnglishLink ? href.replace('en/', '') : href;
+
+    if (lang === 'en' && !isEnglishLink) {
+      // FR → EN : ajoute en/
+      link.setAttribute('href', 'en/' + fileName);
+    } else if (lang === 'fr' && isEnglishLink) {
+      // EN → FR : retire en/
+      link.setAttribute('href', fileName);
+    }
+  });
 }
 
 // Change la langue
